@@ -6,8 +6,11 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the model and test dataset
-model = pickle.load(open("models/Tuned_LGBM_100k.p", "rb"))
-Test_df = pickle.load(open("models/X_10k_backup.p", "rb"))
+#model = pickle.load(open("models/Tuned_LGBM_100k.p", "rb"))
+#Test_df = pickle.load(open("models/X_10k_backup.p", "rb"))
+
+model = pickle.load(open("models/Tuned_LGBM_50N.p", "rb"))
+Test_df = pickle.load(open("models/Test_clean_10k.p", "rb"))
 
 
 # home page
