@@ -1,7 +1,7 @@
 # Loan_Scoring_API
 Project 7_Implementation of a loan scoring model
 
-Context
+##Context
 The financial company Prêt à dépenser offers consumer credit for people with little or no loan history.
 The company is interested in identifying customers who will not pay the loan back to minimize the company’s financial losses. Hence, they want to implement a "credit scoring" tool to calculate the probability that a customer will repay his credit, and then classify the request as granted or denied credit.
 
