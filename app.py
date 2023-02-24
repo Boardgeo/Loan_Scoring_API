@@ -32,7 +32,7 @@ def predict(client_id):
         search_ID = Test_df[Test_df['SK_ID_CURR']==int(client_id)]
         
         # get prediction probablilities
-        y_proba = model.predict_proba(search_ID.drop(['SK_ID_CURR', 'TARGET'],axis=1))[0][1]
+        y_proba = model.predict_proba(search_ID.drop('SK_ID_CURR',axis=1))[0][1]
         
         # Define the optimal threshold - default (1) if greater than threshold, else non-default(0)
         threshold = pickle.load(open("models/Thres_opt.p", "rb"))
